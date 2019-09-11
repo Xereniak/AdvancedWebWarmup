@@ -1,0 +1,116 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Verdana', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.navbar {
+    background: black;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    /*    grid-template-rows: auto;*/
+    grid-gap: 1em;
+}
+
+.nav-button {
+    background: #000;
+    display: none;
+    border-radius: 50%;
+    padding: 30px 10px;
+    opacity: 0;
+    display: none;
+    transition: 1s;
+}
+
+.home {
+    grid-column: 1;
+    color: white;
+    text-decoration: none;
+}
+
+.explore {
+    grid-column: 5;
+    color: white;
+    text-align: end;
+}
+
+.explore2 {
+    grid-column: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.explore3.nav-button {
+    position: fixed;
+    transform: translate(-100%);
+    display: block;
+    opacity: 1;
+}
+
+.explore-dresses {
+    position: fixed;
+    transform: translate(-200%, -100%);
+    padding: 32px 10px;
+}
+
+.explore-acc {
+    position: fixed;
+    transform: translate(0%, -95%);
+    padding: 36px 10px;
+    font-size: .7em;
+}
+
+.explore-ship {
+    position: fixed;
+    transform: translate(-230%, 55%);
+    padding: 30px 10px;
+    font-size: .9em;
+}
+
+.explore-event {
+    position: fixed;
+    transform: translate(-100%, 130%);
+    padding: 20px 12px;
+    font-size: 1em;
+}
+
+.explore-about {
+    position: fixed;
+    transform: translate(25%, 55%);
+    padding: 30px 18px;
+    font-size: 1em;
+}
+
+.rotate {
+    /*    transform: rotate(-90deg);*/
+    display: block;
+    opacity: 1;
+    transition: .5s;
+    transition-delay: .2s;
+}
+
+.fadeover {
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, .7);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    grid-template-columns: auto;
+    justify-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.fadeover.active {
+    display: grid;
+    transition: .2s;
+    opacity: 1;
+}
